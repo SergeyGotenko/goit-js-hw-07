@@ -41,9 +41,7 @@ let modalEl;
 function isModalShow(dataSource) {
   modalEl = basicLightbox.create(
     `
-    <div class="modal">
-        <img src="${dataSource}"  width="900" height="600" ></img>
-    </div>
+     <img src="${dataSource}"  width="900" height="600" ></img>
     `,
     {
         onShow: () =>  onOpenModal(),
