@@ -14,7 +14,7 @@ galleryContainer.insertAdjacentHTML("beforeend", renderGalleryMarkup);
 
 
 
-let gallery = new SimpleLightbox('.gallery a');
-gallery.on('show.simplelightbox', function () {
+let gallery = new SimpleLightbox('.gallery a',{ 
   
+  captionDelay: 100
 });
