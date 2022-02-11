@@ -2,7 +2,7 @@ import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
 
-
+const ESC_KEY_CODE = 'Escape';
 const galleryContainer = document.querySelector('.gallery');
 const createMarkup = isCreateGalleryMarkup(galleryItems);
 
@@ -63,7 +63,7 @@ function onCloseModal() {
 }
 
 function onEscKeyPress(event) {
-  const ESC_KEY_CODE = 'Escape';
+  
   const isEscKey = event.code === ESC_KEY_CODE;
 
   if (isEscKey) {
